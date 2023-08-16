@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 0;
+    color: #263d5a;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    color: white;
+    background-color: #4158D0;
+    background-image: linear-gradient(107deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border: none;
+    transition: all 0.2s linear;
+}
+
+.bb:hover{
+    transform: translateY(-0.2rem);
+}
+
+button:focus-within{
+    box-shadow: 0 0 0 3px #4159d0a9;
+}
+
+input, textarea{
+    outline: none;
+    opacity: 0.6;
+}
+
+input:focus-within:not(:hover), .frm .hf:focus-within:not(:hover), .frm #message:focus-within:not(:hover){
+    box-shadow: 0 0 0 1px #4158D0;
+}
+
+li{
+    list-style: none;
+}
+
+.fcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+    background: transparent;
+    z-index: 1;
+}
+
+.nav h1 a{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.nav button{
+    height: 35px;
+    width: 110px;
+    border-radius: 18px;
+}
+
+.nav .list{
+    width: 70%;
+}
+
+.list li{
+    padding: 0% 5%;
+}
+
+.list li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.box1{
+    position: relative;
+    background: url(images/background6.jpg);
+    height: 97vh;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 25%;
+    z-index: 0;
+    color: white;
+}
+
+.boxh11{
+    height: 110vh;
+    width: 100%;
+}
+
+.box2{
+    background-image: url(images/background5.jpg);
+}
+
+.box3{
+    flex-direction: column;
+    background-image: url(images/background1.jpg);
+    flex-direction: column;
+}
+
+.box4{
+    background-image: url(images/background5.jpg);
+    position: relative;
+}
+
+.box5{
+    background-image: url(images/background3.jpg);
+    flex-direction: column;
+}
+
+.box6{
+    height: 85vh;
+    width: 100%;
+    background-image: url(images/background8.jpg);
+    flex-direction: column;
+}
+
+.box7{
+    height: 85vh;
+    width: 100%;
+    background-image: url(images/background4.jpg);
+}
+
+.box8{
+    height: 85vh;
+    width: 100%;
+    background-image: url(images/background5.jpg);
+}
+
+.box9{
+    width: 100%;
+    height: 35vh;
+    background-image: url(images/background2.jpg);
+    justify-content: space-evenly;
+}
+
+.box10{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background8.jpg);
+    align-items: flex-end;
+    padding-bottom: 5%;
+}
+
+.box11{
+    height: 130vh;
+    width: 100%;
+    background-image: url(images/background1.jpg);
+    justify-content: space-evenly;
+    
+}
+
+.bgposition{
+    background-size: cover;
+    background-position: center;
+}
+
+.box12{
+    height: 50vh;
+    width: 100%;
+    background-color: #131729;
+    justify-content: space-evenly;
+    color: white;
+}
+.flancer{
+    height: 40%;
+    padding-left: 5%;
+}
+
+.flancer h2{
+    font-size: 4rem;
+}
+
+.flancer p{
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+}
+
+.flancer button{
+    width: 170px;
+    height: 55px;
+    border-radius: 30px;
+    font-size: 1.05rem;
+}
+.box1::before{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(94, 113, 219, 0.7);
+}
+
+.borderS{
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.box2 .leftBox{
+    height: 78%;
+    width: 33%;
+    margin: 2%;
+    border: none;
+}
+
+.box2 .leftBox img{
+    border: none;
+}
+.box2 .rightBox{
+    height: 52%;
+    width: 45%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+    margin: 2%;
+    padding-left: 3%;
+    padding-top: 6rem;
+}
+
+.box2 .rightBox .ab{
+    font-size: 4.25rem;
+    font-weight: 1000;
+    margin-bottom: 3%;
+}
+
+.bbox{
+    width: 85%;
+    margin-top: 2%;
+}
+.box3 .features, .box3 .para{
+    color: white;
+}
+.box3 .features, .box5 .features, .box6 .features{
+    font-size: 1.3rem;
+}
+
+.box3 .para, .box5 .para, .box6 .para{
+    width: 60%;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.box3 .characters, .box5 .pricing{
+    width: 85%;
+    height: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ch{
+    width: 30%;
+    height: 100%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+
+.box3 .ch{
+    padding:0 5%;
+    text-align: center;
+}
+
+.box3 .ch .imgdiv{
+    width: 90%;
+    height: 30%;
+}
+.box3 .ch .c{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.box3 .ch button{
+    width: 10rem;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+}
+
+.box4 .leftBox{
+    width: 48%;
+    height: 55%;
+    background-color: gray;
+    position: absolute;
+    left: 5%;
+    background: url(images/features1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.box4 .rightBox{
+    width: 48%;
+    height: 75%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 5%;
+    padding-left: 10%;
+    padding-right: 4%;
+}
+
+.box4 .rightBox .competence{
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.box4 .rightBox .rating{
+    width: 100%;
+    margin-top: 1.6rem;
+}
+
+.box4 .rightBox .rating .pp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.box4 .rightBox .rating hr{
+    position: relative;
+    background-color: gainsboro;
+    border: none;
+    border-radius: 0.25rem;
+    height: 0.5rem;
+    margin-top: 0.7rem;
+}
+hr::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(247, 66, 0, 0.925);
+}
+#brand::before{
+    width: 78%;
+}
+#photo::before{
+    width: 85%;
+}
+#desig::before{
+    width: 86%;
+}
+
+.box5 .pricing .ch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.box5 .pricing .ch .price{
+    font-size: 4rem;
+    font-weight: 1000;
+    margin-bottom: 1rem;
+}
+
+.box5 .pricing .ch .title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.box5 .pricing .ch button{
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.box6 .clients{
+    width: 60%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box6 .clients .ci{
+    width: 30%;
+    height: 80%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+    padding: 2rem;
+}
+
+.box7 .feedback, .box8 .idea{
+    width: 80%;
+    height: 75%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+    flex-direction: column;
+}
+
+.box7 .feedback .tt{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.box7 .feedback .feedbackOptions{
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.box8 .idea{
+    width: 70%;
+    height: 60%;
+}
+
+.box8 .idea .np{
+    font-size: 1.1rem;
+}
+
+.box8 .idea .sh{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+}
+
+.box8 .idea .mId{
+    font-size: 1.4rem;
+}
+
+.box9 .jf{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.box9 .email{
+    height: 45%;
+    width: 60%;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+    
+}
+
+.box9 .email #emailId{
+    width: 60%;
+    height: 45%;
+    border:  none;
+    margin: 0 1rem;
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+}
+
+.box9 .email button{
+    width: 20%;
+    height: 45%;
+    font-size: 1.1rem;
+}
+
+.box10 .leftBox{
+    height: 80%;
+    width: 25%;
+    margin: 2%;
+}
+
+.box10 .leftBox img{
+    border:  none;
+}
+
+.box10 .rightBox{
+    height: 55%;
+    width: 53%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.678) 0%, rgba(255, 255, 255, 0.952) 100%);
+    margin: 2%;
+    padding: 4rem 2.2rem;
+}
+
+.box10 .rightBox .para{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.box11 .formBox{
+    height: 110vh;
+    width: 65%;
+    padding: 0 5%;
+    flex-direction: column;
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+
+.box11 .formBox p{
+    height: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.formBox .frm{
+    margin-top: 4%;
+    width: 100%;
+    height: 65%;
+}
+
+.frm .hf{
+    width: 49%;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 0.60rem;
+    border: none;
+    box-shadow: rgb(0 0 0 / 7%) 0px 1px 1px 0px, rgb(0 0 0 / 7%) 0px 1px 3px 0px, rgb(0 0 0 / 3%) 0px 0px 0px 1px;
+    margin:0.50rem 0.32rem 0.50rem 0;
+    padding-left: 1rem;
+}
+
+.frm #message{
+    width: 100%;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    height: 50%;
+    margin-top: 1rem;
+    box-shadow: rgb(0 0 0 / 7%) 0px 1px 1px 0px, rgb(0 0 0 / 7%) 0px 1px 3px 0px, rgb(0 0 0 / 3%) 0px 0px 0px 1px;
+    column-count: auto;
+    writing-mode: horizontal-tb !important;
+    text-align: start;
+    border-radius: 10px;
+    
+
+}
+
+.frm button{
+    width: 100%;
+    height: 3rem;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+
+}
+
+.box12 .aboutSec{
+    height: 45%;
+    width: 20%;
+}
+
+.box12 .optionsSec{
+    height: 45%;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.box12 .hc{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.box12 li{
+    margin: 3px 0;
+}
+
+.box12 a{
+    position: relative;
+}
+
+.box12 a::before{
+    position: absolute;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 0.2s ease-out;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.box12 a:hover::before{
+    transform: scaleX(1);
+}
